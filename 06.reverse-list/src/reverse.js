@@ -4,11 +4,11 @@
 var List = function() {
   'use strict';
 
-  function reverse(list) {
+  function reverseList(list) {
 
   }
 
   return {
-    reverse: reverse
+    reverseList: reverseList
   };
 };
