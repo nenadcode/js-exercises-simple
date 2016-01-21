@@ -18,7 +18,7 @@ describe('Generating a multiplication table', function() {
       [5, 5, 10, 15, 20, 25]
     ];
 
-    expect(multiplicationTable.generate5()).toBe(table);
+    expect(multiplicationTable.generate5()).toEqual(table);
   });
 
 });
