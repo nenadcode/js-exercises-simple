@@ -21,8 +21,4 @@ describe('Generating a multiplication table', function() {
     expect(multiplicationTable.generate5()).toBe(table);
   });
 
-  it('should calculate the product from 1 to n when the option is "product"', function() {
-    expect(sum.calculate(6, { mode: 'product' })).toBe(720);
-  });
-
 });
