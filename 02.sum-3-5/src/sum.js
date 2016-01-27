@@ -9,7 +9,10 @@ var Sum = function() {
   'use strict';
 
   function sumNumbers35(n) {
-
+  		if (n < 0) {
+  		n = -n;
+  		var negativeNum = true;
+  	
   }
 
   return {
