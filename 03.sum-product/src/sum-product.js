@@ -6,11 +6,32 @@
 var SumProduct = function() {
   'use strict';
 
-  function calculate(n, opts) {
+	function calculate(n, opts) {
+		var res,
+			mode = opts.mode;
 
-  }
+		if(mode !== 'product' && mode !== 'sum') {
+			throw 'Invalid calculation mode.';
+		}
 
-  return {
-    calculate: calculate
-  };
+		if(mode == 'sum') {
+			res = 0;
+		} else {
+			res = 1;
+		}
+
+		for(var i = 1; i <= n; i++) {
+			if(mode == 'sum') {
+				res = res + i;
+			} else {
+				res = res * i;
+			}
+		}
+
+		return res;
+	}
+
+	return {
+	calculate: calculate
+	};
 };

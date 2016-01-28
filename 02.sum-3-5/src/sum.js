@@ -9,10 +9,22 @@ var Sum = function() {
   'use strict';
 
   function sumNumbers35(n) {
-  		if (n < 0) {
-  		n = -n;
-  		var negativeNum = true;
-  	
+
+    if (n < 0) {
+        throw ('No negative numbers allowed');        
+    };
+
+    for (var i = 0, sum = 0; i <= n; i++) {
+        if (i % 3 === 0 || i % 5 === 0) {
+            sum += i;        
+        }
+    };
+
+    return sum;
+
+    
+ 
+
   }
 
   return {
