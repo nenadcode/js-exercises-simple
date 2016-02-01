@@ -14,13 +14,13 @@ var List = function() {
       return [list];
     }
 
-  	var data = [];
+    var data = [];
 
-  	for (var i = 0, listSize = list.length; i < listSize; i++ ) {
-  		data[i] = list[listSize-1-i];
-  	}
+    for (var i = 0, listSize = list.length; i < listSize; i++ ) {
+      data[i] = list[listSize-1-i];
+    }
 
-  	return data;
+    return data;
   }
 
   return {

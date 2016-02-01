@@ -7,6 +7,15 @@ var MyFunction = function() {
 
   function applyFunction(list, f) {
 
+  	var myList = [],
+  		listSize = list.length;
+
+  	for (var i = 0; i < listSize; i++ ) {
+  		myList[i] = f(list[i]);
+  	}
+
+  	return myList;
+
   }
 
   return {

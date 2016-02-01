@@ -5,13 +5,14 @@ var Sum = function() {
   'use strict';
 
   function sumNumbers(n) {
+    var sum = 0;
 
   	if (n < 0) {
   		n = -n;
   		var negativeNum = true;
   	}
 
-  	for (var i = 0, sum = 0; i <= n; i++) {
+  	for (var i = 0; i <= n; i++) {
   		sum += i;
   	}
 
