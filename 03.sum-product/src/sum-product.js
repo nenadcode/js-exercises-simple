@@ -7,28 +7,8 @@ var SumProduct = function() {
   'use strict';
 
     function calculate(n, opts) {
-    	var res,
-    		mode = opts.mode;
+       
 
-    	if(mode !== 'sum' && mode !== 'product') {
-    		throw 'Invalid calculation mode.';
-    	}
-
-    	if(mode == 'sum') {
-    		res = 0;
-    	} else {
-    		res = 1;
-    	}
-
-    	for(var i = 1; i <= n; i++) {
-    		if(mode == 'sum') {
-    			res = res + i; 
-    		} else {
-    			res = res * i;
-    		}
-    	}
-
-    	return res;
     }
 
     return {

@@ -6,27 +6,14 @@
  * n cannot be negative in this excersise.
  */
 var Sum = function() {
-  'use strict';
+    'use strict';
 
-  function sumNumbers35(n) {
+    function sumNumbers35(n) {
+        
 
-    var sum = 0;
+    }
 
-    if (n < 0) {
-        throw ('No negative numbers allowed');        
+    return {
+        sumNumbers: sumNumbers35
     };
-
-    for (var i = 0; i <= n; i++) {
-        if (i % 3 === 0 || i % 5 === 0) {
-            sum += i;        
-        }
-    };
-
-    return sum; 
-
-  }
-
-  return {
-    sumNumbers: sumNumbers35
-  };
 };

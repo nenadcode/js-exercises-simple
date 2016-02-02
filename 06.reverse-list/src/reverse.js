@@ -14,11 +14,7 @@ var List = function() {
       return [list];
     }
 
-    var data = [];
-
-    for (var i = 0, listSize = list.length; i < listSize; i++ ) {
-      data[i] = list[listSize-1-i];
-    }
+    var data = list.reverse();
 
     return data;
   }
